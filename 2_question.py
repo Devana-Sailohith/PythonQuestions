@@ -8,3 +8,14 @@
 #
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
+
+def factorial_num(x):
+    if x == 1:
+        return 1
+    sum = 1
+    for i in range(1, x+1):
+        sum = sum * i
+    return sum
+
+x = int(input("Enter the Positive number : "))
+print(factorial_num(x))
